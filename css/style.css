@@ -311,51 +311,6 @@ a:hover {
     font-weight: bold;
 }
 
-#countdown-box {
-    z-index: 99999;
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -70%);
-    text-align: justify;
-    width: 90%;
-}
-
-#countdown-box:after {
-    display: inline-block;
-    width: 100%;
-    content: "";
-}
-
-.cdi {
-    display: inline-block;
-    font-size: 3em;
-    text-align: center;
-    margin: 0 5px;
-}
-
-.cdb span,
-.cdb .cdi-lbl {
-    animation: blink 3s linear infinite;
-    font-family: 'Langar', cursive;
-    font-weight: bold;
-}
-
-@media (max-width: 992px) {
-    .title {
-        top: 0.5em;
-    }
-
-    #countdown-box {
-        text-align: center;
-        top: 75%;
-    }
-
-    .cdi {
-        font-size: 1.8em;
-    }
-}
-
 @keyframes blink {
     0% {
         color: #4F46E5;
