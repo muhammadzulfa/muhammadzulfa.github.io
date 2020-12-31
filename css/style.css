@@ -285,3 +285,90 @@ a:hover {
         font-size: 54px;
     }
 }
+
+.fireworks {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.bottom-2021 {
+    position: fixed;
+    bottom: 50px;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    z-index: 99999;
+}
+
+.bottom-2021 h1 {
+    margin-top: 400px;
+    font-size: 50px;
+    animation: blink 3s linear infinite;
+    font-family: 'Langar', cursive;
+    font-weight: bold;
+}
+
+#countdown-box {
+    z-index: 99999;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    text-align: justify;
+    width: 90%;
+}
+
+#countdown-box:after {
+    display: inline-block;
+    width: 100%;
+    content: "";
+}
+
+.cdi {
+    display: inline-block;
+    font-size: 3em;
+    text-align: center;
+    margin: 0 5px;
+}
+
+.cdb span,
+.cdb .cdi-lbl {
+    animation: blink 3s linear infinite;
+    font-family: 'Langar', cursive;
+    font-weight: bold;
+}
+
+@media (max-width: 992px) {
+    .title {
+        top: 0.5em;
+    }
+
+    #countdown-box {
+        text-align: center;
+        top: 75%;
+    }
+
+    .cdi {
+        font-size: 1.8em;
+    }
+}
+
+@keyframes blink {
+    0% {
+        color: #4F46E5;
+        -webkit-text-stroke: 1.5px#991B1B;
+    }
+
+    50% {
+        color: #059669;
+        -webkit-text-stroke: 1.5px #F59E0B;
+    }
+
+    100% {
+        color: #2563EB;
+        -webkit-text-stroke: 1.5px #DB2777;
+    }
+}
