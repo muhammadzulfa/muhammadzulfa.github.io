@@ -6,12 +6,21 @@ $(window).on("scroll", function () {
    }
 });
 
-$('.fireworks').fireworks({
-   sound: true,
-   opacity: 0.8,
-   width: '100%',
-   height: '100%'
-});
+$("#go-fb").click(function () {
+   window.location.href = "https://www.facebook.com/muhammadzulfacom";
+})
+
+$("#go-tl").click(function () {
+   window.location.href = "https://t.me/mhmmdzlfa";
+})
+
+$("#go-ig").click(function () {
+   window.location.href = "https://www.instagram.com/mhmmd.zlfa";
+})
+
+$("#go-github").click(function () {
+   window.location.href = "https://www.github.com/muhammadzulfa";
+})
 
 particlesJS("particles-js", {
    "particles": {
@@ -144,22 +153,6 @@ update = function () {
    requestAnimationFrame(update);
 };
 requestAnimationFrame(update);
-
-$("#go-fb").click(function () {
-   window.location.href = "https://www.facebook.com/muhammadzulfacom";
-})
-
-$("#go-tl").click(function () {
-   window.location.href = "https://t.me/mhmmdzlfa";
-})
-
-$("#go-ig").click(function () {
-   window.location.href = "https://www.instagram.com/mhmmd.zlfa";
-})
-
-$("#go-github").click(function () {
-   window.location.href = "https://www.github.com/muhammadzulfa";
-})
 
 $(window).on("scroll", function () {
    if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
